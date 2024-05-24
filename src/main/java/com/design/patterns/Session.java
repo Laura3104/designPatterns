@@ -11,7 +11,7 @@ public class Session {
         this.creationTime = LocalDateTime.now();
     }
 
-    public String getSession(){
-        return "Session created for user : " + user.getName();
+    public void getSession(){
+        System.out.println("Session created for user : " + user.getName());
     }
 }

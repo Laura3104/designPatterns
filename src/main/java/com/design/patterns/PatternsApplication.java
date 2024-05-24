@@ -12,12 +12,10 @@ public class PatternsApplication {
 
 		try{
 			Session session = sessionManager.createSession(user, "high/dashboard");
-
-			System.out.println(session.getSession());
+			session.getSession();
 		} catch (InsufficientRightsException ex){
 			System.err.println(ex.getMessage());
 		}
 
 	}
-
 }
